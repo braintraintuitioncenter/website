@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratikshya Dahal - COO of N4IT</title>
+    <link rel="icon" href="n4it.png" type="image/png"> <!-- N4IT logo in title bar -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Logo at Top Left */
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 40px; /* Left padding */
+            width: 180px; /* Increased width for a larger size */
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url('pratikshya.png') no-repeat center top;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 800px;
+            padding: 50px 20px 20px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        /* Connect Button */
+        .connect-button {
+            background: linear-gradient(145deg, #333333, #1a1a1a);
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border: 2px solid #0077b6;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            transform: translateY(0);
+        }
+
+        .connect-button:hover {
+            background: linear-gradient(145deg, #1449e9, #8c00ff);
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .connect-button:active {
+            transform: translateY(2px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="img.png" alt="N4IT Logo" class="logo">
+
+    <!-- Hero Section with About N4IT -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pratikshya Dahal</h1>
+            <h2><u>COO - Chief Operating Officer</u> of N4IT - New Frontier in Tech</h2>
+            <p>Innovating, strategizing, and driving impactful tech solutions in Nepal and beyond. N4IT is committed to pushing the boundaries of technology to empower businesses and individuals.</p>
+            <a href="https://www.facebook.com/profile.php?id=61567835143036" target="_blank" class="connect-button">Reach Out to Me</a>
+        </div>
+    </section>
+</body>
+</html>
