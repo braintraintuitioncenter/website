@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratikshya Dahal - COO of N4IT</title>
-    <link rel="icon" href="n4it.png" type="image/png">
+    <link rel="icon" href="n4it.png" type="image/png"> <!-- N4IT logo in title bar -->
     <style>
         * {
             margin: 0;
@@ -21,10 +21,11 @@
         .logo {
             position: fixed;
             top: 20px;
-            left: 40px; /* Left padding */
-            width: 180px; /* Increased width for a larger size */
+            left: 40px;
+            width: 180px;
             height: auto;
             z-index: 1000;
+            transition: width 0.3s ease;
         }
 
         /* Hero Section */
@@ -95,6 +96,56 @@
         .connect-button:active {
             transform: translateY(2px);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive Design for Mobile View */
+        @media (max-width: 768px) {
+            .logo {
+                width: 120px; /* Decreased logo size for smaller screens */
+                left: 20px; /* Reduced padding on smaller screens */
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .connect-button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 90px; /* Further decreased logo size for extra-small screens */
+                left: 10px;
+                top: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .connect-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
